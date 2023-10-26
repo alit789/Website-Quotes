@@ -14,7 +14,7 @@ async function getQuotes() {
     const showQuotes = document.getElementById('QuotesShow');
     showQuotes.innerHTML = result.content;
     const nameQuotes = document.getElementById('nameQuote');
-    nameQuotes.innerHTML = result.originator.name;
+    nameQuotes.innerHTML = `- ${result.originator.name} -`;
   } catch (error) {
     console.error(error);
   }
